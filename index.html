@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="index.js"></script>
+  <title>Parallax</title>
+</head>
+<body>
+<header>
+<a href="#" class="logo"> Logo </a>
+<ul>
+
+<li><a href="#" class="active">home</a></li>
+<li><a href="#">about</a></li>
+<li><a href="#">work</a></li>
+<li><a href="#">contact</a></li>
+</ul>
+
+</header>
+
+
+<section>
+  <img src="stars.png" id="stars">
+  <img src="moon.png" id="lua">
+  <img src="mountains_behind.png" id="back">
+  <h2 id="text">Moon ligth</h2>
+  <a href="#sec" id="btn">Explore</a>
+  <img src="mountains_front.png" id="front">
+
+
+</section>
+<div class="sec" id="sec">
+  <br>
+  <h2> Efeito Parallax</h2> <br><br>
+
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit maiores nam excepturi cum autem, tenetur fuga nostrum quaerat vero modi sapiente placeat expedita asperiores. Dicta blanditiis incidunt minima saepe. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde cumque, eligendi aliquam, hic autem labore tempore dolor perferendis provident doloremque officiis reiciendis officia debitis sed maxime quis quod libero! Error. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid ea tenetur minima nulla! Velit, iste nostrum unde quidem optio nesciunt ullam porro nemo tenetur, distinctio architecto quae alias numquam quos !  </p> <br>
+
+
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+<script>
+   let stars = document.getElementById('stars');
+  let lua = document.getElementById('lua');
+  let back = document.getElementById('back');
+  let text = document.getElementById('text');
+  let btn = document.getElementById('btn');
+  let front = document.getElementById('front');
+
+window.addEventListener( 'scroll', function() { 
+  let value = window.scrollY;
+  stars.style.left = value  + 'px';
+  lua.style.top = value * 0.9 + 'px';
+  back.style.top = value * 0.5 + 'px';
+  front.style.top = value * 0 + 'px';
+  text.style.marginRight= value * 2 + 'px';
+})
+</script>
+
+  
+</body>
+</html>
