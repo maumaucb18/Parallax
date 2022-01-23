@@ -7,6 +7,7 @@ font-family: 'Poppins', sans-serif;
 scroll-behavior: smooth;
 }
 
+
 body{
 min-height: 100vh;
 overflow-x: hidden;
@@ -34,8 +35,6 @@ font-size: 2em;
 text-transform: uppercase;
 letter-spacing: 2px;
 margin-left: 10%;
-
-
 }
 
 header ul{
@@ -64,8 +63,10 @@ header ul li a:hover,
 header ul li a.active {
 background: #fff;
 color: #2b1055;
-
 }
+
+  
+
 section{
 position: relative;
 width: 100%;
@@ -98,6 +99,13 @@ pointer-events: none;
 
 }
 
+section img#stars{
+  display: flex;
+padding: 40px 100px;
+height: 100vh;
+
+}
+
 section img#lua{
 mix-blend-mode: screen;
 
@@ -107,6 +115,7 @@ mix-blend-mode: screen;
 section img#front{
   min-height: 100vh;
   z-index:10;
+ 
 }
 #text{
   position: absolute;
